@@ -9,6 +9,10 @@ Komenda do zbudowania obrazu: `docker build -f Dockerfile.dev -t local/fib-app:v
 
 Komenda do uruchomienia kontenera: `docker run -it -p 4200:4200 -v /app/node_modules -v $(pwd):/app local/fib-app:v1`
 
+###### docker-compose z testami
+
+plik - *docker-compose.dev.yml*
+
 ## Obraz produkcyjny
 ###### Dockerfile
 
