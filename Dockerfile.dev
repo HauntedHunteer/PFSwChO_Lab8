@@ -1,8 +1,11 @@
 FROM node:alpine
 
+RUN apk add chromium
+
 WORKDIR /app
 
 ENV NODE_OPTIONS=--openssl-legacy-provider
+ENV CHROME_BIN=/usr/bin/chromium-browser
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json package-lock.json ./
